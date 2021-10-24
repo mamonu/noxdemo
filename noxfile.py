@@ -15,8 +15,8 @@ def tests(session, pandas, numpy, scipy):
 
     session.run("python", "-m", "pip", "install", "--upgrade", "pip")
     session.install("pytest")
-    session.install(f"pandas=={pandas}")
     session.install(f"numpy=={numpy}", "--no-deps")
+    session.install(f"pandas=={pandas}")
     session.install(f"scipy=={scipy}", "--no-deps")
 
     session.run("pytest", "-v", "-W", "ignore::DeprecationWarning")
