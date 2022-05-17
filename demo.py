@@ -3,6 +3,7 @@ import numpy as np
 import scipy as sp
 
 
+
 # Create a dataframe
 def create_df():
     df = pd.DataFrame({"a": [1, 2, 3], "b": [4, 5, 6]})
