@@ -23,3 +23,5 @@ def test_scipy():
     expected = csr_matrix([[1, 2], [3, 4]])
     result = demo.create_sp_mat()
     assert (expected != result).nnz == 0
+
+    
